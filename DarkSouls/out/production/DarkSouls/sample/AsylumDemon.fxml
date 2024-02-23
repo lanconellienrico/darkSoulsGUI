@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AsylumDemonController">
+   <children>
+      <ImageView fitHeight="506.25" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/asylumDemon.jpg" />
+         </image></ImageView>
+      <Button fx:id="fendente" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onAction="#setMossaFendente" opacity="0.8" prefHeight="34.0" prefWidth="101.0" text="Fendente" textFill="#a20000" visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="schiva" layoutX="135.0" layoutY="57.0" mnemonicParsing="false" onAction="#setMossaSchiva" opacity="0.8" prefHeight="34.0" prefWidth="102.0" text="  Schiva  " textFill="#a20000" visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="48.0" layoutY="9.0" opacity="0.66" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="138.0" />
+      <Label fx:id="yourName" layoutX="56.0" layoutY="14.0" textFill="#870505">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="vitaPersonaggio" layoutX="17.0" layoutY="106.0" opacity="0.7" prefWidth="200.0" progress="1.0" visible="false">
+         <effect>
+            <Blend />
+         </effect>
+      </ProgressBar>
+      <ProgressBar fx:id="vitaBoss" layoutX="48.0" layoutY="462.0" opacity="0.7" prefHeight="20.0" prefWidth="831.0" progress="1.0">
+         <effect>
+            <Blend />
+         </effect>
+      </ProgressBar>
+      <Label layoutX="51.0" layoutY="445.0" text="0" textFill="WHITE" />
+      <Label fx:id="vitaTotBoss" layoutX="855.0" layoutY="445.0" text="400" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="22.0" layoutX="81.0" layoutY="427.0" opacity="0.66" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="178.0" />
+      <Label layoutX="100.0" layoutY="427.0" text="ASYLUM DEMON" textFill="#870505">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="fightButton" layoutX="398.0" layoutY="231.0" mnemonicParsing="false" onAction="#beginFight" text="FIGHT" textFill="#8f0000">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="374.0" layoutX="549.0" layoutY="14.0" opacity="0.66" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="337.0" />
+      <VBox fx:id="virtualBox" layoutX="561.0" layoutY="48.0" prefHeight="331.0" prefWidth="318.0" />
+      <Label layoutX="641.0" layoutY="18.0" text="COMBATTIMENTO" textFill="#870505">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

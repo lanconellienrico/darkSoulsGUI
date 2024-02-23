@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="506.25" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewGameController">
+   <children>
+      <Pane prefHeight="506.25" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="506.25" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/newGameWallpaper.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="274.0" fitWidth="215.0" layoutX="671.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/discriminato.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="274.0" fitWidth="215.0" layoutX="450.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/chierico.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="274.0" fitWidth="215.0" layoutX="229.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/guerriero.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="274.0" fitWidth="215.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/viandante.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="868.0" layoutX="15.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/details.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="300.0" text="VIANDANTE" textFill="#afafaf">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="viand" layoutX="14.0" layoutY="299.0" mnemonicParsing="false" selected="true" textFill="#9c9b9b">
+               <toggleGroup>
+                  <ToggleGroup fx:id="personaggi" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="guerr" layoutX="229.0" layoutY="299.0" mnemonicParsing="false" textFill="#9c9b9b" toggleGroup="$personaggi" />
+            <RadioButton fx:id="chier" layoutX="461.0" layoutY="299.0" mnemonicParsing="false" textFill="#9c9b9b" toggleGroup="$personaggi" />
+            <RadioButton fx:id="discr" layoutX="665.0" layoutY="299.0" mnemonicParsing="false" textFill="#9c9b9b" toggleGroup="$personaggi" />
+            <Label layoutX="273.0" layoutY="300.0" text="GUERRIERO" textFill="#afafaf">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="501.0" layoutY="300.0" text="CHIERICO" textFill="#afafaf">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="701.0" layoutY="300.0" text="DISCRIMINATO" textFill="#afafaf">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="comincia" layoutX="410.0" layoutY="467.0" mnemonicParsing="false" onAction="#creaPersonaggio" text="AVANTI" textFill="#c50707">
+               <font>
+                  <Font name="Baskerville Old Face" size="12.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>
