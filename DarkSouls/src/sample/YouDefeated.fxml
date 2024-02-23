@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.YouDefeatedController">
+   <children>
+      <ImageView fitHeight="201.0" fitWidth="619.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/youDefeated.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="294.0" layoutY="147.0" mnemonicParsing="false" onAction="#salvaThanBackToMenu" text="TERMINA PARTITA" textFill="#cd0000">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="481.0" layoutY="147.0" text="Verrai automaticamente" textFill="#afafaf">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font></Label>
+      <Label layoutX="487.0" layoutY="163.0" text="salvato nella classifica!" textFill="#afafaf">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="118.0" text="ASYLUM DEMON TI LASCIA 2000 ANIME" textFill="#ffe500">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="102.0" layoutY="148.0" mnemonicParsing="false" onAction="#avanti" text="AVANTI" textFill="#d20000">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

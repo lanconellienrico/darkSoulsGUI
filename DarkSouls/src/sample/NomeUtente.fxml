@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="115.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NomeUtenteController">
+   <children>
+      <ImageView fitHeight="202.0" fitWidth="392.0" layoutY="-87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/newGameWallpaper.jpg" />
+         </image>
+      </ImageView>
+      <TextField id="nomeUtente" fx:id="nomeUtente" layoutX="70.0" layoutY="14.0" onAction="#written" onKeyTyped="#written" prefHeight="26.0" prefWidth="220.0" promptText="inserisci il tuo nome viaggiatore">
+         <font>
+            <Font name="Baskerville Old Face" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="nomeUtenteButton" disable="true" layoutX="147.0" layoutY="58.0" mnemonicParsing="false" onAction="#utenteLogin" text="GIOCA" textFill="#b20707">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

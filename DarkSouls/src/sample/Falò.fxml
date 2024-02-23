@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="506.25" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FalòController">
+   <children>
+      <ImageView fitHeight="506.25" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/fal.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="30.0" text="BENEVENUTO AL TUO PRIMO FALO'!" textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="94.0" text="Questo è un Falò! Ne vedrai uno ogni boss che sconfiggerai." textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="113.0" text="Qui potrai spendere le anime guadagnate, aumentando le tue capacità!" textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="132.0" text="Attenzione però! Forse potrebbero servirti più avanti." textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="166.0" text="Alcuni falò avranno a custodirli dei Guardiani del Fuoco," textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="185.0" text="e se saranno di buon umore potrebbero insegnarti qualche nuova mossa!" textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="214.0" text="Ma fai attenzione non saranno tutti buoni come me!" textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="253.0" text="BUONA FORTUNA!&quot;" textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="75.0" text="&quot;Ciao, io sono Il Cavaliere delle Cipolle." textFill="#ff8400">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="159.0" layoutY="321.0" mnemonicParsing="false" onAction="#nonDisp" text="PROSEGUI" textFill="RED">
+         <font>
+            <Font name="Baskerville Old Face" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="91.0" layoutY="321.0" mnemonicParsing="false" onAction="#tornaMenu" text="ESCI" textFill="RED">
+         <font>
+            <Font name="Baskerville Old Face" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="368.0" fitWidth="358.0" layoutX="524.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/cipol.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lavori" layoutX="158.0" layoutY="357.0" text="Lavori in corso..." textFill="#ff9900" visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#060606" height="24.0" layoutX="833.0" layoutY="391.0" stroke="TRANSPARENT" strokeType="INSIDE" width="46.0" />
+   </children>
+</AnchorPane>
